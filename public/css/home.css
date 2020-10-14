@@ -1,6 +1,10 @@
 /* REMEMBER TO MOVE THIS ALL TO HOME.SCSS FILE AND COMPILE IT */
 
 /* Elements */
+body {
+  overflow: hidden;
+}
+
 h1, h4 {
   color: white;
 }
