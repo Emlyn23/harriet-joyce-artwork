@@ -2,6 +2,9 @@
 
 /* Elements */
 body {
+  -ms-overflow: hidden;
+  -o-overflow: hidden;
+  -webkit-overflow: hidden;
   overflow: hidden;
 }
 
@@ -41,7 +44,7 @@ p {
 }
 
 /* Home */
-.col-img {
+.col-img-bg {
   background-image: url(/images/thumbnails/19.jpg);
   background-position: cover;
   border-radius: 5px;
