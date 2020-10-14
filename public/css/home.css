@@ -8,7 +8,7 @@ body {
   overflow: hidden;
 }
 
-h1, h4 {
+h1, h4, h6 {
   color: white;
 }
 
@@ -118,6 +118,15 @@ p {
 /* Gallery */
 #gallery {
   background-color: #c7e4d8;
+}
+
+/* Footer */
+footer {
+  background-color: grey;
+}
+
+footer p {
+  color: #ffffff;
 }
 
 /* Reverse column order for Step 2 of 'How it works' so it reads in correct order */
