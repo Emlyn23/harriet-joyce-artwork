@@ -1,0 +1,143 @@
+{% extends "base.html.twig" %}
+{% set images = 
+    [
+        {
+            'img': '1',
+        },
+        {
+            'img': '2',
+        },
+        {
+            'img': '3',
+        },
+        {
+            'img': '4',
+        },
+        {
+            'img': '5',
+        },
+        {
+            'img': '6',
+        },
+        {
+            'img': '7',
+        },
+        {
+            'img': '8',
+        },
+        {
+            'img': '9',
+        },
+        {
+            'img': '10',
+        },
+        {
+            'img': '11',
+        },
+        {
+            'img': '12',
+        },
+        {
+            'img': '13',
+        },
+        {
+            'img': '14',
+        },
+        {
+            'img': '15',
+        },
+        {
+            'img': '16',
+        },
+        {
+            'img': '17',
+        },
+        {
+            'img': '18',
+        },
+        {
+            'img': '19',
+        },
+        {
+            'img': '20',
+        },
+        {
+            'img': '21',
+        },
+        {
+            'img': '22',
+        },
+        {
+            'img': '23',
+        },
+        {
+            'img': '24',
+        },
+        {
+            'img': '25',
+        },
+        {
+            'img': '26',
+        },
+        {
+            'img': '27',
+        },
+        {
+            'img': '28',
+        },
+        {
+            'img': '29',
+        },
+        {
+            'img': '30',
+        },
+        {
+            'img': '31',
+        },
+        {
+            'img': '32',
+        },
+        {
+            'img': '33',
+        },
+        {
+            'img': '34',
+        },
+        {
+            'img': '35',
+        },
+        {
+            'img': '36',
+        },
+        {
+            'img': '37',
+        },
+        {
+            'img': '38',
+        },
+        {
+            'img': '39',
+        },
+        {
+            'img': '40',
+        },
+    ] 
+%}
+
+{% block body %}
+{% include "includes/navbar.html.twig" %}
+
+<section id="main-gallery">
+    <div class="container mt-6">
+        <div class="columns is-multiline">
+            {% for key, value in images|reverse %}
+                <div class="column is-one-quarter-desktop is-half-tablet">
+                    <img src="/images/thumbnails/{{ value.img }}.jpg" class="gallery-item" href="/images/hi-res-images/{{ value.img }}.jpg">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<script src="{{ asset('js/app.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+{% include "includes/navbar.html.twig" %}
+    <!-- <section class="hero is-medium">
+        {% include "includes/banner-hero.html.twig" with {
+            'title' : 'About',
+            'subtitle' : '',
+            'background_img' : '/images/hi-res-images/29.jpg'
+        } %}
+    </section> -->
+    
+    <div class="container mt-6">
+        <h1 style="color: black;">About Harriet</h1>
+        <hr>
+    </div>
+
+    <section id="about" class="container">
+        <img src="{{ asset('/images/harriet-profile-pic.JPEG') }}" alt="Harriet Joyce and her horse Max" style="width: 400px;" class="float-left col-img">
+        <p>Hi, I'm Harriet (the one on the right lmao). I draw paintings unless your dog is really fucking ugly. also no cats. Anyways, holla at me if you want some legit paintings of ur animals nd stuff. Peace Out xoxoxo. <br><br> I have always loved art and been bery creative from a child and always knew that I wanted to have a profession that meant i could be creative. During COVID being on furlough gave me some time to spend experimenting with some acrylicpaints that I received as a birthday oresent. After sharing a paitnitng I had down of my own horse, I then had a couple of friends who asked me ifI could aint their horses. From this word of mouth, I then started getting even more clients. I decided to make an istagram account, which led to even moreclients. I have been overwhelmed with the wonderful comments i receive back from paintings that I so enjoy doing! It really has been such a pelasure.
+        </p>
+    </section>
+
+    <div class="columns container">
+        <div class="column">Facebook</div>
+        <div class="column">Instagram</div>
+        <div class="column">Twitter</div>
+    </div>
+
+{% include "includes/footer.html.twig" %}
+
+<script src="{{ asset('js/app.js') }}"></script>
+
+{% endblock %}

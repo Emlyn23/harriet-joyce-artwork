@@ -1,0 +1,129 @@
+/* REMEMBER TO MOVE THIS ALL TO HOME.SCSS FILE AND COMPILE IT */
+
+/* Elements */
+h1, h4 {
+  color: white;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.hr-dotted {
+  background-color: transparent;
+  border-bottom: 12px dotted grey;
+  border-top: 0px;
+  margin: auto;
+  opacity: 0.5;
+  width: 20%;
+}
+
+.container {
+  padding: 2rem 0rem;
+}
+/* Navbar */
+.navbar {
+  transition: all, 500ms;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* Hero */
+.bottom-border {
+  border-bottom: 2px solid black;
+}
+
+/* Home */
+.col-img {
+  background-image: url(/images/thumbnails/19.jpg);
+  background-position: cover;
+  border-radius: 5px;
+  height: 280px;
+  width: 400px;
+}
+
+.col-content-position {
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.col-img-pos {
+  text-align: center;
+}
+
+/* Carousel */
+#reviewCarousel{
+  height: 400px;
+}
+
+.carousel-item {
+  color: white;
+  font-size: 1.4rem;
+  height: 400px;
+  z-index: 0;
+}
+
+.carousel-item::after {
+  content: "";
+  background-image: linear-gradient(120deg, #95968c, #95968c);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.carousel-text {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  width: 60%;
+  z-index: 2;
+}
+
+#slide-1 {
+  background-image: url(/images/hi-res-images/19.jpg);
+  background-size: cover;
+  background-position: 50%, 50%;
+  height: 400px;
+}
+
+#slide-2 {
+  background-image: url(/images/hi-res-images/22.jpg);
+  background-size: cover;
+  background-position: 50%, 50%;
+}
+
+#slide-3 {
+  background-image: url(/images/hi-res-images/29.jpg);
+  background-size: cover;
+  background-position: 50%, 50%;
+}
+
+/* Gallery */
+#gallery {
+  background-color: #c7e4d8;
+}
+
+/* Reverse column order for Step 2 of 'How it works' so it reads in correct order */
+@media(max-width: 767px) {
+  .mobile-columns-reverse {
+    flex-direction: column-reverse;
+    display: flex;
+  }
+}
+
+@media(max-width: 1022px) {
+  img {
+    max-width: 378px;
+    padding: 0% 5% 0% 5%;
+  }
+}
