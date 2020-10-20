@@ -136,17 +136,36 @@
 
     <section id="about">
         <div class="container">
-            <h3>Hi there!</h3>
-            <p>Looking for that perfect gift, but have zero inspiration? Well look no further! I work with my clients to create beautiful shots of your beloved animal, however big or small! After a thorough consultation period to ensure the design really captures your pets personality I get to work. Using acrylic paints to produce my paintings I ensure that not only is your pets likeness portrayed, but their personality too!</p>
+            <h3 class="is-size-3">Why pet portraits?</h3>
+            <p>Looking for that perfect gift, but have no inspiration? Well look no further! I work with my clients to create beautiful shots of your beloved animal, however big or small! After a thorough consultation period to ensure the design really captures your pets personality I get to work. Using acrylic paints to produce my paintings I ensure that not only is your pets likeness portrayed, but their personality too!</p>
             <p>If you'd love your very own pet portrait, it couldn't be easier! Just follow the steps below and you'll have your very own original painting, the perfect gift for any animal lover you know.</p>
             <hr class="is-divider" data-content="x">
         </div>
+
+        <section id="gallery">
+            <div class="container has-text-centered">
+                <h3 class="is-size-3">Recent Works</h3>
+                <p>My most recent commmissions are posted here. To view more of my work, view my <a href="/gallery">gallery</a>, or check out my <a href="">Instagram</a>!</p>
+                <div class="columns is-multiline">
+                    {% for key, value in images|reverse|slice(0,3) %}
+                        <div class="column is-one-third-desktopis-half-tablet">
+                            <figure class="image is-256-256">
+                                <img src="/images/thumbnails/{{ value.img }}.jpg" href="/images/hi-res-images/{{ value.img }}.jpg">
+                            </figure>
+                        </div>
+                    {% endfor %}
+                </div>
+                <a href="" class="button is-light">View Gallery</a>
+            </div>
+        </section> 
     
         <div class="container">
-            <div class="columns pb-5">
+            <h2 class="has-text-centered is-size-2">So how does it work?</h3>
+            <hr class="is-divider" data-content="x">
+            <div class="columns pb-5 mx-6">
                 <div class="column col-content-position">
-                    <h3>
-                        Step 1: Get in touch!.
+                    <h3 class="subtitle is-size-3">
+                        Step 1: Get in touch!
                     </h3>
                     <p>Every piece I make is produced completely indepedently, and I really try and take my time to ensure each piece captures the likeness of your comanion. As a result, each piece takes time and to avoid long wait times, I offer select windows through which I can accept new commisions. so please get in touch! I will <i>always</i> respond to all enquiries, and hopefully be able to open a consultation with you!</p>
                     <a href="mailto:harriet.joyce@live.co.uk" class="button btn-primary">Email now!</a>
@@ -156,21 +175,21 @@
                 </div>
             </div>
             <hr class="is-divider" data-content="x">
-            <div class="columns mobile-columns-reverse py-5">
+            <div class="columns mobile-columns-reverse py-5 mx-6">
                 <div class="column col-img-pos">
                     <div class="col-img-bg">&nbsp;</div>
                 </div>
                 <div class="column col-content-position">
-                    <h3>
+                    <h3 class="subtitle is-size-3">
                         Step 2: Consultation.
                     </h3>
                     <p>Depending on what you've requested, I'll be in touch to work with you on possible ideas to create the best piece possible. Once we've established what you'd like in the piece I'll get to work!</p>
                 </div>
             </div>
             <hr class="is-divider" data-content="x">
-            <div class="columns py-5">
+            <div class="columns py-5 mx-6">
                 <div class="column col-content-position">
-                    <h3>
+                    <h3 class="subtitle is-size-3">
                         Step 3: Wait for the post!
                     </h3>
                     <p>In a couple of weeks the piece should be finished and with you! I put a lot of love into every piece I create and really try to make each one unique so please understand this timescale is fluid and varies with each painting.</p>
@@ -182,7 +201,7 @@
         </div>
     </section>
 
-    <section id="gallery">
+    <!-- <section id="gallery">
         <div class="container">
             <div class="columns is-multiline">
                 {% for key, value in images|reverse|slice(0,8) %}
@@ -192,7 +211,7 @@
                 {% endfor %}
             </div>
         </div>
-    </section>
+    </section> -->
 
 {% include "includes/footer.html.twig" %}
 

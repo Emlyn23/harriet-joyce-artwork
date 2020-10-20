@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg {{ visibility|default('bg-dark') }} fixed-top" data-page="{{ page|default('') }}">
+{# <nav class="navbar navbar-expand-lg {{ visibility|default('bg-dark') }} fixed-top" data-page="{{ page|default('') }}">
   <a class="navbar-brand" href="#">Harriet Joyce Artwork</a>
   <button class="navbar-toggler navbar-light bg-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -18,5 +18,40 @@
         <a class="nav-link" href="/pricing">Pricing</a>
       </li>
     </ul>
+  </div>
+</nav> #}
+
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="https://bulma.io">
+      <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="mainNav">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="mainNav" class="navbar-menu" style="background-color: transparent;">
+    <div class="navbar-end">
+      <a class="navbar-item mr-3 has-text-white" href="/">
+        Home
+      </a>
+
+      <a class="navbar-item mr-3 has-text-white" href="/about">
+        About
+      </a>
+
+      <a class="navbar-item mr-3 has-text-white"  href="/gallery">
+        Gallery
+      </a>
+      
+      <a class="navbar-item mr-3 has-text-white"  href="/pricing">
+        Pricing
+      </a>
+      </div>
+    </div>
   </div>
 </nav>

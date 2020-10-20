@@ -9,33 +9,41 @@ body {
 }
 
 h1, h4, h6 {
-  color: white;
+  color: white!important;
 }
 
 p {
   font-size: 1.2rem;
 }
 
-.hr-dotted {
+/* .hr-dotted {
   background-color: transparent;
   border-bottom: 12px dotted grey;
   border-top: 0px;
   margin: auto;
   opacity: 0.5;
   width: 20%;
+} */
+
+/* Helpers */
+.width-70-pc {
+  width: 70%;
+  margin: auto;
 }
 
 .container {
   padding: 2rem 0rem;
 }
+
 /* Navbar */
 .navbar {
+  font-size: 1.2rem;
   transition: all, 500ms;
 }
 
-.navbar a {
-  color: white;
-  font-size: 1.4rem;
+.is-dark {
+  background-color: #363636!important;
+  color: #fff!important;
 }
 
 /* Hero */
@@ -48,6 +56,7 @@ p {
   background-image: url(/images/thumbnails/19.jpg);
   background-position: cover;
   border-radius: 5px;
+  margin: auto;
   height: 280px;
   width: 400px;
 }
@@ -117,16 +126,32 @@ p {
 
 /* Gallery */
 #gallery {
-  background-color: #c7e4d8;
+  color: #ffffff;
+  background-color: grey;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+#gallery a {
+  color: #000000;
 }
 
 /* Footer */
 footer {
   background-color: grey;
+  border-top: 3px solid black;
 }
 
-footer p {
-  color: #ffffff;
+footer a {
+  color: #ffffff!important;
+  display: block;
+}
+
+/* About Page */
+.profile-pic {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
 
 /* Reverse column order for Step 2 of 'How it works' so it reads in correct order */

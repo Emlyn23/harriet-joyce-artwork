@@ -1,12 +1,12 @@
+        <div class="hero-head">
+            {% include "includes/navbar.html.twig" %}
+        </div>
         <div class="hero-body bottom-border" style="background-image: url({{ background_img }}); background-size: cover; background-position: center;">
-            {% include "includes/navbar.html.twig" with {
-                'visibility': 'bg-transparent'
-            } %}
             <div class="container">
-                <h1>
+                <h1 class="title">
                 {{ title }}
                 </h1>
-                <h4>
+                <h4  class="subtitle">
                 {{ subtitle }}
                 </h4>
             </div>

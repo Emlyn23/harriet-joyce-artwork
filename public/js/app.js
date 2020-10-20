@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    // Check for click events on the navbar burger icon
+    $(".navbar-burger").click(function() {
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    $(".navbar-burger").toggleClass("is-active");
+    $(".navbar-menu").toggleClass("is-active");
+    });
+
     $('.gallery-item').magnificPopup({
     type: 'image',
     gallery:{
@@ -11,11 +19,9 @@ $(document).ready(function() {
 $(window).scroll(function () {
     if ($(window).scrollTop() >= 50) {
         console.log('test');
-        $('nav').addClass('bg-dark');
-        $('nav').removeClass('bg-transparent');
+        $('nav').addClass('is-dark');
     } else {
-        $('nav').removeClass('bg-dark');
-        $('nav').addClass('bg-transparent');
+        $('nav').removeClass('is-dark');
     }
 });
 
